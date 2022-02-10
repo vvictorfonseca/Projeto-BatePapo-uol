@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate-Papo-Uol</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="./imagens/logo 1 (1).png">
+        <img onclick="activateSideBar()" src="./imagens/Vector (3).png">
+    </header>
+
+    <footer>
+        <input type ="text " class="form-itens" placeholder ="Escreva aqui... ">
+        <img class="paper" src="./imagens/Vector (5).png">
+    </footer>
+
+    <aside class="escondido">
+        <div class="sidebar escondido">
+            <ul class="box-one">
+                <h1>Escolha um contato <br> para enviar mensagem:</h1>
+              <li>
+                <ion-icon name="people"></ion-icon>
+                <p>Todos</p>
+                <ion-icon class="selecionado check" name="checkmark"></ion-icon>
+              <li>
+                <ion-icon name="person-circle"></ion-icon>
+                <p>João</p>
+                <ion-icon class="selecionado check" name="checkmark"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="person-circle"></ion-icon>
+                <p>Maria</p>
+                <ion-icon class="selecionado check" name="checkmark"></ion-icon>
+              </li>
+            </ul>
+            <ul class="box-two">
+                <hi class="tittle-two">Escolha a visibilidade:</hi>
+                <li>
+                    <ion-icon name="lock-open"></ion-icon>
+                    <p >Público</p>
+                    <ion-icon class="selecionado check" name="checkmark"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="lock-open"></ion-icon>
+                    <p>Reservadamente</p>
+                    <ion-icon class="selecionado check" name="checkmark"></ion-icon>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
