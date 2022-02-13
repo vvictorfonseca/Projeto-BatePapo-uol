@@ -1,8 +1,8 @@
 body {
     width: 375px;
     font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
     position: relative;
+    background-color: #e5e5e5;
 }
 
 header {
@@ -70,6 +70,7 @@ aside {
     background: rgba(0, 0, 0, 0.6);
     left: 0px;
     position: absolute;
+    margin-top: -80px;
 }
 
 .sidebar {
@@ -86,7 +87,7 @@ aside {
     display: none;
 }
 
-.box-one h1 {
+.boxOne h1 {
     height: 86px;
     font-family: Roboto;
     font-size: 16px;
@@ -123,7 +124,6 @@ li p {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  position: relative;
 }
 
 .tittle-two {
@@ -146,13 +146,70 @@ li p:nth-child(3) {
     margin-top: 80px;
 }
 
-.selecionado {
-    display: none;
-}
-
 .check {
     color: green;
     margin-right: 15px;
     position: absolute;
     right: 0;
+}
+
+.container {
+  margin-bottom: 100px;
+  margin-top: 90px;
+  /*overflow-y: scroll;*/
+}
+
+.mensagens {
+    font-size: 14px;
+}
+
+.mensagens .mensagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px 13px;
+    margin: 4px 0;
+    line-height: 1.25;
+    margin-top: 4px;
+    width: 375px;
+    word-wrap: break-word;
+}
+
+.horário {
+    color: #AAAAAA;
+}
+
+.nome {
+    margin-left: 6px;
+    font-style: bold;
+    font-weight: 700;
+    Font: Roboto;
+}
+
+.para {
+    margin-left: 6px;
+    Font: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16.41px;
+}
+
+.texto {
+    margin-left: 6px;
+    Font: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16.41px;
+}
+
+.mensagem.status {
+    background-color: #dcdcdc;
+}
+
+.mensagem.message {
+    background-color: white;
+}
+.mensagem.private_message {
+    background-color: #ffdede ;
 }
