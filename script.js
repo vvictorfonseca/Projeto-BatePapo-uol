@@ -63,7 +63,8 @@ function imprimirMensagens (response) {
         <p class="para">para</p>
         <p class="nome">${mensagem.to}</p>
         <p class="texto">${mensagem.text}</p>
-    </div>`
+        </div>`
+        
     }
     const atualizar = document.querySelector(".mensagens:last-child");
     atualizar.scrollIntoView({block: "end", behavior: "smooth"});
@@ -98,7 +99,7 @@ function enviarMensagem () {
 
     let postagem = {
         from: nome,
-        to: "todos",
+        to: "Todos",
         text: enviarTexto,
         type: "message"
     }
@@ -128,28 +129,10 @@ function limparInput () {
 
     enviarTexto.value = "";
 }
-/*Atualizar Mensagens*/
+
+ /*Atualizar Mensagens*/
 
 let intervaloMensagens = setInterval(buscarMensagens, 3000);
 let intervaloChecagem = setInterval(checarStatus, 5000)
 
 /*Atualizar Menasgens*/
-
-
-// Funções para as funcionalidades do sidebar - Bônus//
-
-const aside = document.querySelector("aside")
-const sidebar = document.querySelector(".sidebar")
-
-function activateSideBar () {
-   aside.classList.remove("escondido")
-   sidebar.classList.remove("escondido")
-}
-
-function disableSideBar (event) {
-    if (event.target == aside) {
-    aside.classList.add("escondido")
-    sidebar.classList.add("escondido")
-    }
-}
-window.addEventListener("click", disableSideBar);
