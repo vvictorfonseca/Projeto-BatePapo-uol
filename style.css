@@ -8,7 +8,7 @@ body {
 header {
     height: 80px;
     background-color: white;
-    width: 100%;
+    width: 381px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -30,7 +30,7 @@ header img:nth-child(2) {
 
 footer {
     height: 80px;
-    width: 100%;
+    width: 381px;
     background-color: white;
     display: flex;
     position: fixed;

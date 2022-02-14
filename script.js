@@ -57,7 +57,7 @@ function imprimirMensagens (response) {
         const mensagem = mensagens[i]
         const section = document.querySelector(".mensagens")
 
-        section.innerHTML += `<div class="mensagem ${mensagem.type}">
+        section.innerHTML += `<div class="mensagem ${mensagem.type}" data-identifier="message">
         <p class="horario">${mensagem.time}</p>
         <p class="nome">${mensagem.from}</p>
         <p class="para">para</p>
